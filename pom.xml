@@ -21,6 +21,7 @@
             <groupId>com.github.kevmc00</groupId>
             <artifactId>SEAssignment1</artifactId>
             <version>v1.0</version>
+            <type>jar</type>
         </dependency>
     </dependencies>
 
