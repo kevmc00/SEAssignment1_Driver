@@ -11,6 +11,6 @@ import java.util.ArrayList;
 
 public class Driver {
     public static void main(String[] args){
-        System.out.println("Hello World!");
+        Student peter = new Student("Peter", LocalDate.parse("1996-06-13"));
     }
 }
