@@ -24,9 +24,9 @@ public class Driver {
         eng.addModule(mod2);
         eng.addModule(mod3);
         
-        Student peter = new Student("Peter", LocalDate.parse("1996-06-13"));
-        Student amanda = new Student("Amanda", LocalDate.parse("2000-07-24"));
-        Student marcus = new Student("Marcus", LocalDate.parse("2003-03-22"));
+        Student peter = new Student("Peter", LocalDate.parse("1996-06-13"), cs);
+        Student amanda = new Student("Amanda", LocalDate.parse("2000-07-24"), cs);
+        Student marcus = new Student("Marcus", LocalDate.parse("2003-03-22"), eng);
         
         cs.addStudent(peter);
         cs.addStudent(amanda);
@@ -42,42 +42,24 @@ public class Driver {
         allStudent.add(marcus);
         
         for (Course c : allCourse){
-            System.out.println(c.getName());
+            System.out.println(c.getName() + "\nModules:");
             ArrayList<Module> modules = c.getModules();
             for (Module m : modules){
                 System.out.println(m.getName());
             }
+            System.out.println("------------------------------------");
         }
-        
+        System.out.println("");
         for (Student s : allStudent){
             System.out.println(s.getName() + " Username: " + s.getUsername());
             System.out.println("Course: " + s.getCourse().getName());
-            System.out.println("List of Modules:");
+            System.out.println("\nList of Modules:\n");
             ArrayList<Module> modules = s.getModules();
             for(Module m : modules){
                 System.out.println(m.getName());
             }
+            System.out.println("------------------------------------");
         }
         
-//        for (Course c : allCourse) {
-//            ArrayList<Module> modules = c.getModules();
-//            System.out.println(c.getName());
-//            System.out.println("List of Students:");
-//            ArrayList<Student> courseStudents = c.getStudents();
-//            for (Student s : courseStudents){
-//                System.out.println("    " + s.getName());
-//            }
-//            System.out.println("List of Modules:");
-//            for (Module m : modules) {
-//                System.out.println(m.getName());
-//                System.out.println("    Students in Module:\n");
-//                ArrayList<Student> stud = m.getStudents();
-//                for (Student s : stud) {
-//                    System.out.println("    " + s.getName() + "(" + s.getUsername() + ")");
-//                }
-//                System.out.println("");
-//            }
-//            System.out.println("------------------------------------------");
-//        }
     }
 }
