@@ -37,6 +37,7 @@ public class Driver {
         allStudent.add(amanda);
         allStudent.add(marcus);
         
+        System.out.println("************ Courses ************");
         for (Course c : allCourse){
             System.out.println(c.getName() + "\nModules:");
             ArrayList<Module> modules = c.getModules();
@@ -45,11 +46,11 @@ public class Driver {
             }
             System.out.println("------------------------------------");
         }
-        System.out.println("");
+        System.out.println("************ Students ************");
         for (Student s : allStudent){
-            System.out.println(s.getName() + " Username: " + s.getUsername());
+            System.out.println(s.getName() + " (Username: " + s.getUsername() + ")");
             System.out.println("Course: " + s.getCourse().getName());
-            System.out.println("\nList of Modules:\n");
+            System.out.println("\nList of Modules:");
             ArrayList<Module> modules = s.getModules();
             for(Module m : modules){
                 System.out.println(m.getName());
