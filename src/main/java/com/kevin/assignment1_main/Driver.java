@@ -12,5 +12,26 @@ import java.util.ArrayList;
 public class Driver {
     public static void main(String[] args){
         Student peter = new Student("Peter", LocalDate.parse("1996-06-13"));
+        Student amanda = new Student("Amanda", LocalDate.parse("2000-07-24"));
+        Student marcus = new Student("Marcus", LocalDate.parse("2003-03-22"));
+        
+        Module mod1 = new Module("Software Engineering", "CT417");
+        mod1.addStudent(peter);
+        mod1.addStudent(amanda);
+        Module mod2 = new Module("Machine Learning & Data Mining","CT475");
+        mod2.addStudent(marcus);
+        mod2.addStudent(peter);
+        Module mod3 = new Module("System on Chip Design I", "EE341");
+        mod3.addStudent(amanda);
+        mod3.addStudent(marcus);
+        
+        Course cs = new Course("Computer Science");
+        cs.addModule(mod1);
+        cs.addModule(mod2);
+        
+        Course eng = new Course("Computer and Electronic Engineering");
+        eng.addModule(mod3);
+        
+        System.out.println("HELLO!");
     }
 }
