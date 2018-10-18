@@ -28,10 +28,6 @@ public class Driver {
         Student amanda = new Student("Amanda", LocalDate.parse("2000-07-24"), cs);
         Student marcus = new Student("Marcus", LocalDate.parse("2003-03-22"), eng);
         
-        cs.addStudent(peter);
-        cs.addStudent(amanda);
-        eng.addStudent(marcus);
-        
         ArrayList<Course> allCourse = new ArrayList<Course>();
         allCourse.add(cs);
         allCourse.add(eng);
