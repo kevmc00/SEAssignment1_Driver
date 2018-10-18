@@ -20,7 +20,7 @@
         <dependency>
 	    <groupId>com.github.kevmc00</groupId>
 	    <artifactId>SEAssignment1</artifactId>
-	    <version>2bdaa605d9</version>
+	    <version>76a074f461</version>
 	</dependency>
     </dependencies>
 
