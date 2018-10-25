@@ -13,8 +13,8 @@ public class Driver {
     public static void main(String[] args){
         
         //Create Courses
-        Course eng = new Course("Computer and Electronic Engineering");
-        Course cs = new Course("Computer Science");
+        Course eng = new Course("Computer and Electronic Engineering", LocalDate.parse("2018-09-01"),LocalDate.parse("2018-03-31"));
+        Course cs = new Course("Computer Science", LocalDate.parse("2018-09-01"),LocalDate.parse("2018-03-31"));
         //Create Modules
         Module mod1 = new Module("Software Engineering", "CT417");
         Module mod2 = new Module("Machine Learning & Data Mining","CT475");
